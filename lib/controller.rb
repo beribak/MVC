@@ -29,7 +29,8 @@ class Controller
         # 2 ask user for index to delete
         index = @view.ask_for_index
         # 3 delete recipe
-        @cookbook.destroy(index)
+        @cookbook.remove_recipe(index)
     end
+
 
 end
