@@ -32,5 +32,14 @@ class Controller
         @cookbook.remove_recipe(index)
     end
 
-
+    def update 
+        # 1 display recipes for user VIEW
+        list
+        # 2 ask for index VIEW
+        index = @view.ask_for_index
+        # 3 ask for updated description VIEW
+        desc = @view.ask_for_desc
+        # 4 updating description REPOSITORY
+        @cookbook.update(index, desc) 
+    end
 end

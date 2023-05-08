@@ -19,4 +19,9 @@ class View
         puts "Index?"
         gets.chomp.to_i - 1
     end
+
+    def ask_for_new_description 
+        puts "Input new description"
+        gets.chomp
+    end
 end

@@ -25,6 +25,15 @@ class Cookbook
         save_csv 
     end
 
+    # UPDATE
+    def update(index, desc) 
+        # 1 find recipe
+        recipe = @recipes[index] 
+        # 2 update recipe
+        recipe.description = desc
+        save_csv
+    end
+
     private
 
     def save_csv 
